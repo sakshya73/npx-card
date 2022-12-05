@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "An npx card for introduction",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "author": "sakshya",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
