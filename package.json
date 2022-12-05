@@ -1,0 +1,9 @@
+{
+  "name": "npx-card",
+  "version": "1.0.0",
+  "description": "An npx card for introduction",
+  "main": "index.js",
+  "scripts": {},
+  "author": "sakshya",
+  "license": "MIT"
+}
