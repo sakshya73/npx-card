@@ -36,16 +36,18 @@ const questions = [
 ];
 
 const data = {
-  name: chalk.bold.hex("#00FF00")("                     Sakshya Arora"),
+  name: chalk.bold.hex("#00FF00")("                       Sakshya Arora"),
+  work: chalk.bold.hex("#DC3535")(" Software Engineer at GeekyAnts"),
   twitter: chalk.hex("#00FFF6")("twitter.com/AroraSakshya"),
   github: chalk.hex("#E6E5A3")("github.com/sakshya73"),
-  linkedin: chalk.hex("#7FE9DE")("linkedin.com/in/sakshyaarora/"),
+  linkedin: chalk.hex("#B6E2A1")("linkedin.com/in/sakshyaarora/"),
   stackOverflow: chalk.hex("#EB6440")(
     "stackoverflow.com/users/10429398/sakshya73"
   ),
-  instagram: chalk.hex("#FEBE8C")("instagram.com/sakshya_arora73/"),
+  instagram: chalk.hex("#FF9E9E")("instagram.com/sakshya_arora73/"),
   hashnode: chalk.hex("#BA94D1")("hashnode.com/@saksh73"),
 
+  labelWork: chalk.hex("#FFEFD6").bold("            Work:"),
   labelTwitter: chalk.hex("#009EFF").bold("         Twitter:"),
   labelGitHub: chalk.hex("#10A19D").bold("          GitHub:"),
   labelLinkedin: chalk.hex("#00A1D9").bold("        Linkedin:"),
@@ -58,19 +60,23 @@ const card = boxen(
   [
     `${data.name}`,
     ``,
+    `${data.labelWork} ${data.work}`,
+    ``,
     `${data.labelTwitter}  ${data.twitter}`,
     `${data.labelGitHub}  ${data.github}`,
     `${data.labelLinkedin}  ${data.linkedin}`,
-    `${data.labelStackOverflow}  ${data.stackOverflow}`,
     `${data.labelInstagram}  ${data.instagram}`,
     `${data.labelHashnode}  ${data.hashnode}`,
+    `${data.labelStackOverflow}  ${data.stackOverflow}`,
     ``,
     ``,
-    `${chalk.bold("Hi there! I'm Sakshya.")}`,
-    `${chalk.bold("I'm a Frontend Engineer from India, and")}`,
-    `${chalk.bold("I like creating stylish, cool, responsive mobile and ")}`,
-    `${chalk.bold("web apps using React and React-Native.")}`,
-    `${chalk.bold("I'd be happy to hear from you.")}`,
+    `${chalk.bold.italic("Hi there! I'm Sakshya.")}`,
+    `${chalk.bold.italic("I'm a Frontend Engineer from India, and")}`,
+    `${chalk.bold.italic(
+      "I like creating stylish, cool, responsive mobile and web apps."
+    )}`,
+    ``,
+    `${chalk.bold.italic("I'd be happy to hear from you.")}`,
   ].join("\n"),
   {
     margin: 1,
