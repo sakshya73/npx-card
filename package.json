@@ -1,14 +1,25 @@
 {
-  "name": "npx-card",
+  "name": "sakshya",
+  "type": "module",
   "version": "1.0.0",
-  "description": "An npx card for introduction",
+  "description": "Here is my npx card so that you can get to know me better.",
   "main": "index.js",
   "scripts": {
+    "test": "node index.js",
     "start": "nodemon index.js"
   },
-  "author": "sakshya",
+  "bin": "./index.js",
+  "author": "Sakshya",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "keywords": [],
+  "dependencies": {
+    "boxen": "^7.0.0",
+    "chalk": "^5.1.2",
+    "clear": "^0.1.0",
+    "inquirer": "^9.1.4",
+    "open": "^8.4.0"
   }
 }
